@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Regions and ARIA landmarks</title>
+    </head>
+    <body>
+        <header>
+            <h1>Testing ARIA landmarks</h1>
+        </header>
+        <section role="main">
+            <h2>Main Content</h2>
+            <p>This section contains the main content of the page.</p>
+            <p>It is enclosed within a &lt;section&gt; block</p>
+            <article role="region" aria-label="Article 1">
+                <h3>The first Article</h3>
+                <p>This is contained within an &lt;article&gt; block.</p>
+            </article>
+            <article role="region" aria-label="Article 2">
+                <h3>Article 2</h3>
+                <p>Another small article.</p>
+                <div role="note">
+                    <h4>A note</h4>
+                    <p>This is a note associated with the second article on the page.</p>                
+                </div>                
+            </article>           
+        </section>
+        <footer>            
+            <p>This is in the footer block of the page.</p>
+            <p>Copyright &copy; 2021, Donald Raikes</p>
+        </footer>
+    </body>
+</html>
